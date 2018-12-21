@@ -1,0 +1,22 @@
+{
+  "name": "time-slicing",
+  "version": "1.0.0",
+  "description": "Break down long tasks into smaller tasks, avoid blocking the main process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berwin/time-slicing.git"
+  },
+  "keywords": [
+    "time-slicing"
+  ],
+  "author": "Berwin <liubowen.niubi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/berwin/time-slicing/issues"
+  },
+  "homepage": "https://github.com/berwin/time-slicing#readme"
+}
