@@ -4,6 +4,7 @@
   "description": "Break down long tasks into smaller tasks, avoid blocking the main process.",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c scripts/config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/berwin/time-slicing/issues"
   },
-  "homepage": "https://github.com/berwin/time-slicing#readme"
+  "homepage": "https://github.com/berwin/time-slicing#readme",
+  "devDependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-butternut": "^0.1.0"
+  }
 }
