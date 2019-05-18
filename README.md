@@ -27,15 +27,13 @@ We can use the chrome developer tool to capture the performance of the code run.
 Now, we use time-slicing to cut long tasks, the code is as follows:
 
 ```javascript
-setTimeout(_ => {
-  ts(function* () {
-    const start = performance.now()
-    while (performance.now() - start < 1000) {
-      yield
-    }
-    console.log('done!')
-  })
-}, 5000)
+setTimeout(ts(function* () {
+  const start = performance.now()
+  while (performance.now() - start < 1000) {
+    yield
+  }
+  console.log('done!')
+}), 5000)
 ```
 In the code, we use the **yield** keyword to split the code and distribute the code in different macrotask queues.
 
